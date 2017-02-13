@@ -44,8 +44,8 @@ void Mesh::getAABB(D3DXVECTOR3& vMin, D3DXVECTOR3& vMax)
 	SIZE_T size;
 	HR(vb->Map((void**)&vertices, &size));
 
-	vMin = D3DXVECTOR3(+INFINITY, +INFINITY, +INFINITY);
-	vMax = D3DXVECTOR3(-INFINITY, -INFINITY, -INFINITY);
+	vMin = D3DXVECTOR3(+INFTY, +INFTY, +INFTY);
+	vMax = D3DXVECTOR3(-INFTY, -INFTY, -INFTY);
 
 	for(UINT i = 0; i < mMeshData->GetVertexCount(); ++i)
 	{
